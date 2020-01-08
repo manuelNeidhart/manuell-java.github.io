@@ -1,0 +1,21 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.background {
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+p{
+    height: 10vh;
+    color: white;
+mix-blend-mode: hard-light;
+padding: 1vh;
+background-color:white; 
+}
+
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_mix-blend-mode_cutout */
