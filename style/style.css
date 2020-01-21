@@ -1,21 +1,65 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-.background {
+body {
     background-image: url(../images/background.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
 }
 
-p{
+p {
     height: 10vh;
     color: white;
-mix-blend-mode: hard-light;
-padding: 1vh;
-background-color:white; 
+    mix-blend-mode: hard-light;
+    padding: 1vh;
+    background-color: white;
 }
 
-/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_mix-blend-mode_cutout */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin: 0 auto;
+    width: 81%;
+}
+
+h1 {
+    color: white;
+    font-size: 9vh;
+    text-align: center;
+    background-color: rgba(000, 000, 000, 0.7);
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    letter-spacing: 1vh;
+    width: 80%;
+    margin: 0 auto;
+    border: white solid 1vh;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.mainHead {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
