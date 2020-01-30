@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Steckbrief</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainHead">
+        <h1>Neidhart Manuel</h1>
+
+        <ul>
+            <li class="un"><a href="../index.html">Home</a></li>
+            <li class="un"><a href="sub_page_01.html">Pictures</a></li>
+            <li class="un"><a href="sub_page_02.html">Social-Media</a></li>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="moreMargin">
+
+    </div>
+    <!-- Command von W3 für diese Slideshow aber von mir selbst noch bearbeitet -->
+
+    <div class="w3-content" style="max-width:85vh;">
+
+        <div class="slideborder_1">
+            <img class="mySlides" src="../images/Nachbearbeitet1.jpg" style="width:100%;display:none;">
+
+            <img class="mySlides" src="../images/Nachbearbeitet2.jpg" style="width:100%">
+
+            <img class="mySlides" src="../images/Nachbearbeitet3.jpg" style="width:100%;display:none">
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col s4">
+                <div class="slideborder_2"><img class="demo w3-opacity w3-hover-opacity-off" src="../images/Nachbearbeitet1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)"></div>
+            </div>
+            <div class="w3-col s4">
+                <div class="slideborder_2"><img class="demo w3-opacity w3-hover-opacity-off" src="../images/Nachbearbeitet2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"></div>
+            </div>
+            <div class="w3-col s4">
+                <div class="slideborder_2"><img class="demo w3-opacity w3-hover-opacity-off" src="../images/Nachbearbeitet3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footer">by Manuel Neidhart</p>
+    </footer>
+</body>
+
+<script>
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+</script>
+
+</html>
